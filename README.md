@@ -1,160 +1,53 @@
-Superstore Sales Analysis using SQL 
-
-Project Overview 
-
-This project analyzes the Sample Superstore dataset using MySQL. The goal is to explore sales performance, profitability, customer segments, and regional trends using SQL queries. 
-
- 
-
-Dataset 
-
-Sample Superstore Dataset 
-
-Total Records: 9994 
-
-Database: MySQL 
-
- 
-
-Skills Used 
-
-SQL 
-
-MySQL Workbench 
-
-Aggregate Functions 
-
-GROUP BY 
-
-ORDER BY 
-
-WHERE 
-
-HAVING 
-
-CASE 
-
-LIMIT 
-
-LIKE 
-
- 
-
-SQL Concepts Covered 
-
-Data Exploration 
-
-Data Filtering 
-
-Sorting 
-
-Aggregation 
-
-Business Analysis 
-
-Conditional Statements 
-
- 
-
-Business Questions Solved 
-
-Total number of orders 
-
-Total sales 
-
-Total profit 
-
-Average sales 
-
-Highest sale 
-
-Lowest sale 
-
-Sales by region 
-
-Profit by category 
-
-Sales by state 
-
-Top 10 states by sales 
-
-Top products by sales 
-
-High-value orders 
-
-Loss-making orders 
-
-California sales analysis 
-
-Consumer segment analysis 
-
-Sales by category 
-
-Profit by region 
-
-Average profit by state 
-
-Categories with high sales 
-
-Products with highest profit 
-
-Cities starting with 'S' 
-
-Profit/Loss classification 
-
-Top profitable products 
-
-Least profitable products 
-
-Category-wise quantity sold 
-
-Sales greater than 1000 
-
-Technology category analysis 
-
-Region-wise sales ranking 
-
-State-wise sales comparison 
-
-Top 5 profitable orders 
-
- 
-
-Sample Query 
-
-SELECT Region, 
-      SUM(Sales) AS Total_Sales 
-FROM superstore 
-GROUP BY Region 
-ORDER BY Total_Sales DESC; 
- 
-
- 
-
-Project Outcome 
-
-Identified high-performing regions. 
-
-Compared category-wise profitability. 
-
-Found top-selling products. 
-
-Analyzed customer segments. 
-
-Generated business insights using SQL. 
-
- 
-
-Tools Used 
-
-MySQL Workbench 
-
-Microsoft Excel 
-
- 
-
-Author 
-
-Nikhil R  
-
- 
+# Superstore Sales Analysis using MySQL
+
+## Project Overview
+This project analyzes the Sample Superstore dataset using MySQL to generate business insights through SQL queries.
+
+## Dataset
+- Sample Superstore Dataset
+- Total Records: 9,994
+- Columns: 21
+
+## SQL Concepts Used
+
+- SELECT
+- WHERE
+- ORDER BY
+- GROUP BY
+- HAVING
+- COUNT
+- SUM
+- AVG
+- MAX
+- MIN
+- DISTINCT
+- LIMIT
+
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7b0fd44e-9702-4f06-b387-49c7121179e6" />
+
+
+## Business Questions Solved
+
+1. Total Orders
+2. Total Sales
+3. Highest Sales
+4. Lowest Sales
+5. Profit Analysis
+6. Sales by Region
+7. Sales by Category
+8. Sales by State
+9. Top Selling Cities
+10. Loss Making Orders
+
+## Files
+
+- superstore_sales_analysis.sql
+- SampleSuperstore.csv
+- Dashboard Screenshot.png
+
+## Tools Used
+
+- MySQL Workbench
+- Microsoft Excel
+- GitHub
