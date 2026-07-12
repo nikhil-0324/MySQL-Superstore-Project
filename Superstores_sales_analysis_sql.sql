@@ -1,0 +1,35 @@
+-- CREATE DATABASE superstore_db;
+-- USE superstore_db;
+-- SELECT * FROM superstore;
+-- SELECT COUNT(*) AS Total_Rows FROM superstore;
+-- DESCRIBE superstore
+-- SELECT DISTINCT Category From superstore
+-- select DISTINCT Region FROM superstore
+-- SELECT SUM(Sales) AS Total_Sales FROM superstore;
+-- select SUM(Profit) AS Total_Profit FROM superstore
+-- Select AVG(Sales) AS Average_Sales FROM superstore;
+-- SELECT MAX(Sales) AS Highest_Sale FROM superstore;
+-- select MIN(Sales) AS Lowest_Sale FROM superstore;
+-- select *FROM superstore WHERE Sales > 1000;
+-- select * FROM superstore WHERE Profit < 0;
+-- Select * FROM superstore WHERE State = 'California';
+-- SELECT * FROM superstore WHERE Category = 'Technology';
+-- SELECT * FROM superstore WHERE Segment = 'Consumer';
+-- SELECT Region,SUM(Sales) AS Total_Sales FROM superstore GROUP BY Region;
+-- SELECT Category,SUM(Profit) AS Total_Profit FROM superstore GROUP BY Category;
+-- SELECT State, SUM(Sales) AS Total_Sales FROM superstore GROUP BY State;
+-- SELECT Category, SUM(Quantity) AS Total_Quantity FROM superstore GROUP BY Category;
+-- SELECT Segment,AVG(Profit) AS Average_Profit FROM superstore GROUP BY Segment;
+-- SELECT State,SUM(Sales) AS Total_Sales FROM superstore GROUP BY State ORDER BY Total_Sales DESC LIMIT 10;
+-- SELECT State,SUM(Profit) AS Total_Profit FROM superstore GROUP BY State ORDER BY Total_Profit ASC LIMIT 10;
+-- SELECT Product_Name, SUM(Sales) AS Total_Sales FROM superstore GROUP BY Product_Name ORDER BY Total_Sales DESC LIMIT 10;
+-- SELECT Region,SUM(Sales) AS Total_Sales FROM superstore GROUP BY Region HAVING SUM(Sales) > 300000;
+-- SELECT Category,SUM(Profit) AS Total_Profit FROM superstore GROUP BY Category HAVING SUM(Profit) > 100000;
+-- SELECT category, Profit, CASE WHEN Profit > 0 THEN 'Profit' ELSE 'Loss'END AS Status FROM superstore;
+-- SELECT * FROM superstore WHERE Sales > 1000 AND Profit > 100;
+-- SELECT * FROM superstore WHERE Category = 'Furniture' AND Region = 'West';
+-- SELECT * FROM superstore WHERE City LIKE 'S%';
+-- SELECT City,State,Sales,Profit FROM superstore ORDER BY Profit DESC LIMIT 5;
+-- SELECT Region, RANK() OVER (ORDER BY SUM(Sales) DESC) AS Sales_Rank, SUM(Sales) AS Total_Sales FROM superstore GROUP BY Region;
+-- SELECT category,SUM(Profit) AS Total_Profit FROM superstore GROUP BY category ORDER BY Total_Profit ASC LIMIT 5;
+-- SELECT * FROM superstore WHERE Sales > 1000 AND Profit > 100;
